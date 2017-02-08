@@ -1,0 +1,43 @@
+h1{
+color:Red;
+font-family:impact;
+font-size: 100%
+line-height:1.10
+margin: 0;
+}
+	body{
+	 margin: 0 auto;
+	 background-image: url(http://tvnewsroom.org/wp-content/section-images/wallpapers/bbc-news-2008.jpg);
+     background-repeat: no-repeat;
+     background-size: 100% 720px;
+	}
+	 .container{
+	 width: 500px;
+	 height:400px;
+	 text-align: center;
+	 background-color: rgba(52, 73,94,0.7);
+	 border-radius: 4px;
+	 margin: 0 auto;
+	 margin-top: 150px;
+	}
+
+footer {
+    padding-top: 550px;
+}
+	button,
+	input {overflow: visible;}
+
+	
+    
+    
+
+
+
+
+
+
+
+
+
+
+
