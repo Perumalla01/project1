@@ -2,21 +2,37 @@
 <html lang="en" class="nojs">
 <head>
     <title>Join Us!</title>
-<link rel="stylesheet" href="screen.css" >
+    
+    <link rel="stylesheet" href="css/screen.css" >
 </head>
 <body>
-  <h1> Sign Up to get top five tending news </h1> 
+<main id="content">
+  <h1> Sign Up to get top five tending news for the day </h1> 
 
-    Name:<input placeholder="Full name" type="Full name" name="Full name">
+    <form method="get" action="#null">
+      <ol>
+        <li id="input-name">
+          <label for="name"> Name:</label>
+          <input type="text" name="name" id="name" placeholder="Full name" />
+        </li>
+         
+        
+        <li id="input-email">
+          <label for="email"> Email Address:</label>
+          <input type="email" name="email" id="email" placeholder="you@example.com" pattern="^.+@.+$" />
+        </li>
   
-    Email:<input placeholder="email@example.com" type="Email" name="email">
-<input type="submit" name="submit" value="Submit" class="button"/>
-    <form
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="js/site.js"></script>
-
-<footer>
-    <p>Designed by Paul Perumalla</p>
-</footer>
+    
+        <li id="input-submit">
+          <input type="submit" name="submit" value="Sign Up !"/>
+        </li>
+      </ol>
+    </form>
+  <footer>
+      <p> Page design By Paul Perumalla</p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/site.js"></script>
+</main>
 </body>
 </html>
