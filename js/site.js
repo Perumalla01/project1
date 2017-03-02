@@ -1,17 +1,23 @@
-$.noConflict();
-(function($) {
-  $(document).ready(function() {
-    $('#form').on('submit', function(event) {
-      var input + $('#email').val();
-      console.log(input);
-        if($.trim($' && '#email').val()) === ' ') {
-          alert('Please fill missing information');
-        }
-        $("#button").click(function(){
-        alert('Thank You! Your form has been submitted');
-        }
-    }
+//Prevents entire page from reloading on submit
+$(document).ready(function() {
+  $("#newsletter").on('submit', function(e) {
+    e.preventDefault();
+  })
+})
+
+function checkAll() {
+  //Resets output from previous check
+  document.getElementById("approvedx").innerHTML = "";
+  document.getElementById("agex").innerHTML = "";
+  var x = 0;
+  // AGE CHECK
+  if (document.getElementById("yesage").checked === false) {
+    document.getElementById("agex").innerHTML = "Please fill out all fields";
+    x = x + 1;
   }
-      event.preventDefault();
-        <script type="text/javascript">
+  // APPROVAL
+  if (x == 0) {
+    document.getElementById("approvedx").innerHTML = "Thank you for signing up!";
+  }
+}
 
