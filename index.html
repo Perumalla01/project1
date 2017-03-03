@@ -11,6 +11,8 @@
 <main id="content">
   <h1> Sign Up to get top five tending news for the day </h1> 
 
+    <h2>Our free e-mail alert service allows you to receive important news and information in Chicago area. To sign up, please select the topics that interest you below.</h2>
+
     <form method="get" action="#null">
       <ol>
         <li id="input-name">
@@ -24,7 +26,20 @@
           <input type="email" name="email" id="email" placeholder="you@example.com" pattern="^.+@.+$" />
         </li>
         <li>
-          <h2>Human Verification</h2>
+            <fieldset>
+          <legend>Topic of Interest</legend>
+          <p>
+             <label>Select list</label>
+             <select id = "myList">
+               <option value = "1"></option>
+               <option value = "2">Sports</option>
+               <option value = "3">Entertainment</option>
+               <option value = "4">Business</option>
+               <option value = "5">Technology</option>
+             </select>
+          </p>
+       </fieldset>
+          <h3>Human Verification</h3>
           
                       <!-- START CAPTCHA -->
     
@@ -46,23 +61,14 @@ Type the above number:<br>
 <!-- END CAPTCHA -->
   
     
-        <li id="input-submit">
-          <input type="submit" name="submit" value="Sign Up !"/>
+        <li id="submit">
+          <input type="submit" name="submit" value="Submit"/>
         </li>
       </ol>
     </form>
-  <footer>
-      <p> Page design By Paul Perumalla</p>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/site.js"></script>
-</main>
-</body>
-</html>
+    <script type="text/javascript">
 
-<script type="text/javascript">
-
-// Captcha Script 
+// Captcha Script
 
 function checkform(theform){
 var why = "";
@@ -91,7 +97,7 @@ var code = a + b + c + d + e;
 document.getElementById("txtCaptcha").value = code;
 document.getElementById("CaptchaDiv").innerHTML = code;
 
-// Validate input against the generated number
+// /* http://allwebco-templates.com/support/script-simple-captcha.htm */Validate input against the generated number
 function ValidCaptcha(){
 var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
 var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
@@ -107,3 +113,14 @@ function removeSpaces(string){
 return string.split(' ').join('');
 }
 </script>
+
+  <footer>
+      <p> Page design By Paul Perumalla</p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/site.js"></script>
+</main>
+</body>
+</html>
+
+-

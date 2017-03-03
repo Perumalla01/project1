@@ -1,6 +1,6 @@
-$(document).ready(function(){
-  $("#submitButton").click(function(){
-	  alert('Thank You. Your email address has been submitted');
+$(document).ready(function (){
+  $("#submit").click(function (){
+	  window.alert("Thank You. Your email address has been submitted");
 	});
 });
 

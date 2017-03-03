@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 150%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -60,10 +60,18 @@ table {
 
 h1{
 color:Red;
-font-family:impact;
-font-size: 100%
+font-family:inherit;
+font-size: 350%
 line-height:1.10
 margin-top: 0
+}
+
+h2{
+color: black;
+font-family: inherit;
+font-size: 250%
+line-height:1.10
+margin-top 0;
 }
 	body{
 	 margin: 0 auto;
